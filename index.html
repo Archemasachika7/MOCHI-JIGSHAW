@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Themed Jigsaw Puzzle</title>
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="header">
+            <h1>Love Themed Jigsaw Puzzle</h1>
+            <div class="hearts">❤️ ❤️ ❤️</div>
+        </div>
+        
+        <div class="description">
+            <p>Welcome to our love-themed jigsaw puzzle! Choose your difficulty level and solve the puzzle by dragging and arranging the pieces. Challenge yourself with different difficulty levels or use the solution button if you get stuck. Enjoy the beautiful image and have fun!</p>
+        </div>
+        
+        <div class="difficulty-container">
+            <div class="difficulty-label">Select Difficulty:</div>
+            <div class="difficulty-options">
+                <button class="difficulty-btn" data-pieces="12">Easy (12 pcs)</button>
+                <button class="difficulty-btn" data-pieces="24">Medium (24 pcs)</button>
+                <button class="difficulty-btn" data-pieces="36">Hard (36 pcs)</button>
+                <button class="difficulty-btn" data-pieces="50">Difficult (50 pcs)</button>
+            </div>
+        </div>
+        
+        <button class="start-btn" id="startBtn">Start Puzzle</button>
+    </div>
+    
+    <!-- Game Screen -->
+    <div class="game-screen" id="gameScreen">
+        <div class="game-header">
+            <h2>Love Jigsaw Puzzle</h2>
+            <div class="game-controls">
+                <button class="control-btn" id="backBtn">← Back</button>
+                <button class="control-btn" id="solutionBtn">Show Solution</button>
+                <div class="timer" id="timer">00:00</div>
+            </div>
+        </div>
+        
+        <div class="puzzle-container">
+            <div class="pieces-container" id="piecesContainer">
+                <h3>Puzzle Pieces</h3>
+                <div class="pieces-area" id="piecesArea"></div>
+            </div>
+            
+            <div class="board-container">
+                <h3>Puzzle Board</h3>
+                <div class="puzzle-board" id="puzzleBoard"></div>
+            </div>
+        </div>
+        
+        <div class="success-message" id="successMessage">
+            <div class="success-content">
+                <h2>Congratulations! ❤️</h2>
+                <p>You completed the puzzle!</p>
+                <button class="play-again-btn" id="playAgainBtn">Play Again</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
